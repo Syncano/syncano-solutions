@@ -1,0 +1,4 @@
+scripts:
+- label: getWeather
+  runtime: python
+  script: scripts/getWeather.py

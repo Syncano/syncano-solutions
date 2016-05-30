@@ -1,0 +1,13 @@
+scripts:
+- config:
+    email: '"your-email"'
+    mail_api: '"mailgun-api-key"'
+    mail_domain: '"mailgun-domain"'
+  label: Craigslist Scraper
+  runtime: nodejs
+  script: scripts/Craigslist_Scraper.js
+- config:
+    accntKey: '"your-account-key"'
+  label: Scraper Scheduler
+  runtime: nodejs
+  script: scripts/Scraper_Scheduler.js

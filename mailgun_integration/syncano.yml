@@ -1,0 +1,21 @@
+classes:
+  maillogs:
+    fields:
+      attachment: boolean filtered
+      subject: string filtered
+      toEmail: string filtered
+    group_permissions: create_objects
+    other_permissions: create_objects
+scripts:
+- config:
+    fromEmail: ''
+    fromName: ''
+    instance: ''
+    mailgunAPIKey: ''
+    mailgunDomain: ''
+    syncanoAccountKey: ''
+  endpoints:
+  - runsendemail
+  label: sendEmail
+  runtime: nodejs
+  script: scripts/sendEmail.js

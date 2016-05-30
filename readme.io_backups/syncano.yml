@@ -1,0 +1,21 @@
+classes:
+  readme_backup:
+    fields:
+      file: file
+    group_permissions: create_objects
+    other_permissions: create_objects
+scripts:
+- config:
+    account_key: ACCOUNT_KEY
+    cookie: COOKIE
+    project: PROJECT_NAME
+    version: PROJECT_VERSION
+  label: readme_backup
+  runtime: python
+  script: scripts/readme_backup.py
+- config:
+    account_key: ACCOUNT_KEY
+    id: 1
+  label: get_docs_backup
+  runtime: python
+  script: scripts/get_docs_backup.py

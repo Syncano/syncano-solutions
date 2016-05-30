@@ -1,0 +1,14 @@
+classes:
+  location:
+    fields:
+      lat: float filtered ordered
+      lon: float filtered ordered
+    group_permissions: none
+    other_permissions: none
+scripts:
+- label: Store location
+  runtime: python
+  script: scripts/Store_location.py
+- label: Nearby locations
+  runtime: python
+  script: scripts/Nearby_locations.py

@@ -1,0 +1,13 @@
+classes:
+  venmo_payment:
+    fields:
+      amount: float filtered ordered
+      balance: float filtered ordered
+      note: string
+      phone: string ordered
+    group_permissions: none
+    other_permissions: none
+scripts:
+- label: Venmo Payment
+  runtime: python
+  script: scripts/Venmo_Payment.py

@@ -1,0 +1,4 @@
+scripts:
+- label: Stripe Payment
+  runtime: nodejs
+  script: scripts/Stripe_Payment.js

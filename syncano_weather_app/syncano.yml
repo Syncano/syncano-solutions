@@ -1,0 +1,25 @@
+classes:
+  weather_active_cities:
+    fields:
+      city_id: float filtered
+      city_name: string
+      current_temp: float
+      forecast: text
+      short_description: string
+    group_permissions: create_objects
+    other_permissions: create_objects
+scripts:
+- config:
+    accountKey: ENTER-ACCOUNT-KEY-HERE
+    open_weather_map_api_key: OPENWEATHERMAP-API-KEY
+  endpoints:
+  - weather_webhook
+  label: weather_get_data
+  runtime: nodejs
+  script: scripts/weather_get_data.js
+- config:
+    accountKey: ENTER-YOUR-ACCOUNT-KEY
+    codeboxId: CODEBOX-ID-HERE
+  label: weather_update_active
+  runtime: nodejs
+  script: scripts/weather_update_active.js

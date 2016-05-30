@@ -1,0 +1,9 @@
+scripts:
+- endpoints:
+  - send-event
+  label: send-event
+  runtime: python
+  script: scripts/send-event.py
+- label: add-user
+  runtime: python
+  script: scripts/add-user.py

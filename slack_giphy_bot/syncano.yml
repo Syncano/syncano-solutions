@@ -1,0 +1,10 @@
+scripts:
+- config:
+    slack_channel: ''
+    slack_hook_url: ''
+    slack_icon_emoji: ':'
+    slack_message: '{gif}'
+    slack_username: ''
+  label: giphy
+  runtime: python
+  script: scripts/giphy.py

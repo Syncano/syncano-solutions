@@ -1,0 +1,23 @@
+classes:
+  tictactoe:
+    fields:
+      value: string
+    group_permissions: create_objects
+    other_permissions: create_objects
+  tictactoeplayers:
+    fields:
+      is_connected: boolean
+      is_player_turn: boolean
+      is_winner: boolean
+      name: string
+      play_as: string
+    group_permissions: create_objects
+    other_permissions: create_objects
+scripts:
+- config:
+    apiKey: ''
+    className: tictactoeplayers
+    instanceName: ''
+  label: TicTacToe
+  runtime: nodejs
+  script: scripts/TicTacToe.js

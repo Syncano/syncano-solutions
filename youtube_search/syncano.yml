@@ -1,0 +1,15 @@
+classes:
+  video:
+    fields:
+      description: text
+      query: string
+      thumbnail: string
+      title: string
+      video_id: string
+      video_url: string
+    group_permissions: none
+    other_permissions: none
+scripts:
+- label: search_youtube
+  runtime: python
+  script: scripts/search_youtube.py

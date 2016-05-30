@@ -1,0 +1,1 @@
+This Solution downloads from YouTube list of videos for given query and then stores list of videos on Syncano. Provides Webhook for easy video download manual triggering and a Channel to easily receive real-time updates on videos changes.

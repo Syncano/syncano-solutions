@@ -1,0 +1,24 @@
+classes:
+  counter:
+    fields:
+      count: integer
+    group_permissions: create_objects
+    other_permissions: create_objects
+  data:
+    fields:
+      title: string
+    group_permissions: create_objects
+    other_permissions: create_objects
+scripts:
+- config:
+    accountKey: ''
+    instance: ''
+  label: addObject
+  runtime: nodejs
+  script: scripts/addObject.js
+- config:
+    accountKey: 671e9b84e0662ba0aa64e9a2263fb579fbea53d8
+    instance: solitary-firefly-2947
+  label: updateCounter
+  runtime: nodejs
+  script: scripts/updateCounter.js

@@ -1,0 +1,21 @@
+classes:
+  video:
+    fields:
+      published_at: datetime filtered ordered
+      source_id: string filtered
+      title: string filtered ordered
+      url: string
+      video_description: text
+    group_permissions: none
+    other_permissions: create_objects
+scripts:
+- config:
+    default-query: funny cats
+    google-developer-key: ''
+    max-number-of-results: 10
+    syncano-account-key: ''
+  endpoints:
+  - youtube-downloader
+  label: Youtube Harvester
+  runtime: nodejs
+  script: scripts/Youtube_Harvester.js

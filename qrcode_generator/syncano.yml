@@ -1,0 +1,11 @@
+classes:
+  qrcode:
+    fields:
+      data: string
+      image: file
+    group_permissions: none
+    other_permissions: none
+scripts:
+- label: generateQRCode
+  runtime: python
+  script: scripts/generateQRCode.py

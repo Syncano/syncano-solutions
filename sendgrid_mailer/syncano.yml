@@ -1,0 +1,19 @@
+scripts:
+- config:
+    apiKey: ''
+    bcc: ''
+    cc: ''
+    date: ''
+    from: ''
+    fromName: ''
+    html: ''
+    replyTo: ''
+    subject: ''
+    text: ''
+    to: ''
+    toName: ''
+  endpoints:
+  - send_email
+  label: SendGrid Mailer
+  runtime: nodejs
+  script: scripts/SendGrid_Mailer.js

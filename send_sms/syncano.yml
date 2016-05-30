@@ -1,0 +1,12 @@
+classes:
+  message:
+    fields:
+      image: string
+      message: string
+      message_sid: string
+    group_permissions: none
+    other_permissions: none
+scripts:
+- label: sendsms
+  runtime: python
+  script: scripts/sendsms.py

@@ -1,0 +1,12 @@
+classes:
+  image:
+    fields:
+      file_url: string filtered
+      image: file
+      page_number: integer
+    group_permissions: none
+    other_permissions: none
+scripts:
+- label: convert pdf to image
+  runtime: python
+  script: scripts/convert_pdf_to_image.py
